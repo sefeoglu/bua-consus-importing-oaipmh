@@ -1,0 +1,20 @@
+nameOverride: ""
+
+image: registry.gitlab.com/piveau/consus/piveau-consus-importing-oaipmh
+imageTag: "1.3.4"
+imagePullPolicy: IfNotPresent
+imagePullSecrets: []
+
+resources:
+  requests:
+    cpu: 1000m
+    memory: 2Gi
+
+oaipmhAdapterUri: http://geoh.conterra:8080/oai-pmh-geo-harvest/harvesters/
+
+extraEnvs: []
+
+javaOpts: "-XX:MaxRAMPercentage=75.0"
+
+service:
+  port: 8080

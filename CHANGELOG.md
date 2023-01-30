@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.3.5 (2023-14-30)
+
 **Fixed:**
 * Evaluate `preProcessing` from config for pre-processing 
 

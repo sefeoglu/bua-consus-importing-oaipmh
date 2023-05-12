@@ -1,4 +1,4 @@
-# bua-consus-importing-oaipmh
+# pivea-consus-importing-oaipmh-dc
 Importing records using oai_dc metaprefix via the OAI-PMH protocol and feeding a pipe. 
 The repository is based on piveau importing oai-pmh library, which imports records via the OAI-PMH protocol and feeding a pipe.
 

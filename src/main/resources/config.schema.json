@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://io.piveau/resources/importing-oaipmh/config.schema.json",
+  "title": "importing-oaipmh configuration",
+  "description": "piveau pipe segment config object schema",
+  "type": "object",
+  "required": [ "address", "catalogue" ],
+  "properties": {
+    "address": {
+      "type": "string",
+      "title": "The source address to import from"
+    },
+    "catalogue": {
+      "type": "string",
+      "title": "The target catalogue id"
+    },
+    "outputFormat": {
+      "enum": [
+        "application/rdf+xml",
+        "application/n-triples",
+        "application/ld+json",
+        "application/trig",
+        "text/turtle",
+        "text/n3"
+      ],
+      "title": "The output format",
+      "default": "application/n-triples"
+    },
+    "sendListDelay": {
+      "type": "integer",
+      "title": "The delay before sending the identifier list"
+    },
+    "sendHash": {
+      "type": "boolean",
+      "title": "Generate and send a hash value",
+      "default": false
+    }
+  }
+}

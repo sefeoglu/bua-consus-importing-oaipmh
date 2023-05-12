@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "4ff7a0a7-2fc3-4e84-a6ef-a83ab55b698c",
+    "name": "test-pipe",
+    "title": "Test Pipe",
+    "context": "JUnit5 Tests",
+    "transport": "payload",
+    "version": "1.0"
+  },
+  "body": {
+    "segments": [
+      {
+        "header": {
+          "name": "importing-oaipmh",
+          "segmentNumber": 1,
+          "title": "Importing OAI-PMH",
+          "processed": false
+        },
+        "body": {
+          "config": {
+            "address": "https://zenodo.org/oai2d",
+            "metadata": "dcat",
+            "queries": {
+              "set": "user-openaire-research-graph"
+            },
+            "catalogue": "openaire"
+          }
+        }
+      }
+    ]
+  }
+}

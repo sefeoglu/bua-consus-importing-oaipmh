@@ -51,7 +51,7 @@ public class ImportingOaipmhVerticle extends AbstractVerticle {
     private int defaultDelay;
     private String defaultOaiPmhAdapterUri;
 
-    private static final List<String> dcatFormats = List.of("dcat_ap", "dcat");
+    private static final List<String> dcatFormats = List.of("dc_ap", "dc");
 
     @Override
     public void start(Promise<Void> startPromise) {
@@ -97,7 +97,7 @@ public class ImportingOaipmhVerticle extends AbstractVerticle {
 
         HttpRequest<Buffer> request = client.getAbs(address);
 
-        String metadataPrefix = config.getString("metadata", "dcat_ap");
+        String metadataPrefix = config.getString("metadata", "dc_ap");
         if (!request.queryParams().contains("metadataPrefix")) {
             request.addQueryParam("metadataPrefix", metadataPrefix);
         } else {

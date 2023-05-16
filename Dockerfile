@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk
 
-ENV VERTICLE_FILE importing-oaipmh.jar
+ENV VERTICLE_FILE importing-oaipmh-dc.jar
 
 # Set the location of the verticles
 ENV VERTICLE_HOME /usr/verticles

@@ -23,14 +23,14 @@ Requirements:
 
 ```bash
 $ git clone <gitrepouri>
-$ cd piveau-consus-importing-oaipmh
+$ cd piveau-consus-importing-oaipmh-dc
 $ mvn package
 ```
 
 ## Run
 
 ```bash
-$ java -jar target/importing-oaipmh.jar
+$ java -jar target/importing-oaipmh-dc.jar
 ```
 
 ## Docker
@@ -38,13 +38,13 @@ $ java -jar target/importing-oaipmh.jar
 Build docker image:
 
 ```bash
-$ docker build -t piveau/piveau-importing-oaipmh .
+$ docker build -t piveau/piveau-importing-oaipmh-dc .
 ```
 
 Run docker image:
 
 ```bash
-$ docker run -it -p 8080:8080 piveau/piveau-importing-oaipmh
+$ docker run -it -p 8080:8080 piveau/piveau-importing-oaipmh-dc
 ```
 ## Configuration
 
